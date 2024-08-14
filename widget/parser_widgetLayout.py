@@ -56,7 +56,7 @@ class WidgetLayout(QWidget):
         main_layout = QVBoxLayout()
 
         bit32_layout = QHBoxLayout()
-        bit32_label = QLabel("32bit: ")
+        bit32_label = QLabel("32bit(hex): ")
         bit32_label.setFixedWidth(self.label_width)
         self.bit32_input = QLineEdit()
         self.bit32_input.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
