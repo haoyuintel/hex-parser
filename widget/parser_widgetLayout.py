@@ -1,8 +1,6 @@
-from functools import partial
-
 from PyQt5.QtCore import QRegExp, pyqtSlot
-from PyQt5.QtGui import QIcon, QRegExpValidator, QFont
-from PyQt5.QtWidgets import QApplication, QWidget, QHBoxLayout, QLabel, QDoubleSpinBox, QLineEdit, QVBoxLayout, \
+from PyQt5.QtGui import QRegExpValidator
+from PyQt5.QtWidgets import QWidget, QHBoxLayout, QLabel, QLineEdit, QVBoxLayout, \
     QPushButton, QSpacerItem, QSizePolicy
 import pyperclip
 
@@ -94,7 +92,7 @@ class WidgetLayout(QWidget):
         self.setLayout(main_layout)
 
         self.setWindowTitle("32bit hex parser")
-        self.setFixedSize(450, 300)
+        self.setFixedSize(500, 300)
 
         self.show()
 

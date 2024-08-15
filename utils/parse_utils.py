@@ -1,6 +1,6 @@
 
 def parse_32_bit_t(hex_str):
-    b = bin(int(hex_str, 16))[2:]
+    b = bin(int(hex_str, 16))[2:].zfill(32)
     d = b[:5]
     M = b[5:9]
     y = b[9:15]
